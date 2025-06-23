@@ -17,7 +17,8 @@ animal_sounds <- function(animal, sound) {
     cli_abort(
       c("{.var animal} must be a single string!",
         "i" = "It was {.type {animal}} of length {length(animal)} instead.",
-        "i" = "You typed {animal}.")
+        "i" = "You typed {animal}."),
+      class = "error_not_single_string"
       )
   }
 
@@ -25,7 +26,8 @@ animal_sounds <- function(animal, sound) {
     cli_abort(
       c("{.var sound} must be a single string!",
         "i" = "It was {.type {sound}} of length {length(sound)} instead.",
-        "i" = "You typed {sound}.")
+        "i" = "You typed {sound}."),
+      class = "error_not_single_string"
     )
   }
 
