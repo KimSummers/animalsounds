@@ -7,6 +7,11 @@ test_that("animal_sounds produces expected strings", {
 test_that("handles invalid inputs", {
   expect_error(animal_sounds("World", c("Hello", "again")),
                class = "error_not_single_string")
-  expect_error(animal_sounds("World", as.factor("Hello")),
+  expect_error(animal_sounds("cat", as.factor("miaow")),
                class = "error_not_single_string")
+})
+
+test_that("error message for invalid input", {
+  expect_snapshot(animal_sounds("World", c("Hello", "again")),
+                  error = TRUE)
 })
