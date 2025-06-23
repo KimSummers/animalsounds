@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples animal_sounds("World", "hello")
-animal_sounds <- function(animal, sound) {
+animal_sounds <- function(animal, sound = NULL) {
 
   if (!rlang::is_character(animal, n = 1)) {
     cli_abort(
@@ -22,14 +22,21 @@ animal_sounds <- function(animal, sound) {
       )
   }
 
-  if (!rlang::is_character(sound, n = 1)) {
-    cli_abort(
-      c("{.var sound} must be a {.cls character} vector of length one!",
-        "i" = "It was {.type {sound}} of length {length(sound)} instead.",
-        "i" = "You typed {sound}."),
-      class = "error_not_single_string"
-    )
+  if (is.null(sound))
+  {
+    paste0("The ", animal, " makes no sound.")
+  }else
+  {
+    if (!rlang::is_character(sound, n = 1)) {
+      cli_abort(
+        c("{.var sound} must be a {.cls character} vector of length one!",
+          "i" = "It was {.type {sound}} of length {length(sound)} instead.",
+          "i" = "You typed {sound}."),
+        class = "error_not_single_string"
+      )
+    }
+
+    paste0("The ", animal, " says ", sound, "!")
   }
 
-  paste0("The ", animal, " says ", sound, "!")
 }
