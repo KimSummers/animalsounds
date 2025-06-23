@@ -1,5 +1,9 @@
 #' What sounds the animal makes
 #'
+#' Prints out what sound the animal makes
+#'
+#' Uses function [paste0()] no it is **NOT** do anything _useful_
+#'
 #' @param animal string
 #' @param sound string
 #'

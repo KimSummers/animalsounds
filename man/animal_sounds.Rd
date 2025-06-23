@@ -15,7 +15,10 @@ animal_sounds(animal, sound)
 A string stating what sound the animal makes
 }
 \description{
-What sounds the animal makes
+Prints out what sound the animal makes
+}
+\details{
+Uses function \code{\link[=paste0]{paste0()}} no it is \strong{NOT} do anything \emph{useful}
 }
 \examples{
 animal_sounds("World", "hello")
