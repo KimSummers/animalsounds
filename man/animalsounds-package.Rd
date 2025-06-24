@@ -12,6 +12,7 @@ Checks you only have 1 animal and 1 sound and prints what the animal says. Also 
 Useful links:
 \itemize{
   \item \url{https://github.com/KimSummers/animalsounds}
+  \item \url{https://kimsummers.github.io/animalsounds/}
   \item Report bugs at \url{https://github.com/KimSummers/animalsounds/issues}
 }
 
