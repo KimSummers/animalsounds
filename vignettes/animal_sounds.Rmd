@@ -1,0 +1,29 @@
+---
+title: "animalsounds"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{animal_sounds}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(animalsounds)
+animal_sounds("World", "Hello")
+## basic example code
+```
+
+```{r setup}
+library(animalsounds)
+```
