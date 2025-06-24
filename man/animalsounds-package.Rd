@@ -4,9 +4,9 @@
 \name{animalsounds-package}
 \alias{animalsounds}
 \alias{animalsounds-package}
-\title{animalsounds: What the Package Does (One Line, Title Case)}
+\title{animalsounds: Prints out what the animal says}
 \description{
-What the package does (one paragraph).
+Checks you only have 1 animal and 1 sound and prints what the animal says. Also handles soundless animals.
 }
 \seealso{
 Useful links:
@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com}
+\strong{Maintainer}: Kim Summers \email{kimberley.summers@warwick.ac.uk}
 
 }
 \keyword{internal}

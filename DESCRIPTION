@@ -1,11 +1,11 @@
 Package: animalsounds
-Title: What the Package Does (One Line, Title Case)
+Title: Prints out what the animal says
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Kim", "Summers", , "kimberley.summers@warwick.ac.uk", role = c("aut", "cre"))
+Description: Checks you only have 1 animal and 1 sound and prints what the
+    animal says. Also handles soundless animals.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
